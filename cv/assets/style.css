@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0% 10% 0%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(36, 39, 41);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f8f8f8f0;
+}
+
+.content {
+    display: clear;
+}
+
+.personalinfo, .blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.verticalline {
+    border-left: 2px solid #b0afd1;
+    margin-left: -3px;
+    margin-right: 1em;
+    top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 2em;
+}
+
+.personalinfo ul {
+    padding: 0;
+}
+
+ul:not(.personalIngoList)>li {
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul:not(.personalIngoList)>li:before {
+    content: "-";
+    padding-right: 1em;
+}
+
+img {
+    padding: 0 5%;
+    width: 300px;
+    height: 200px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label:after {
+    content: ":";
+}
+
+input {
+    border: 0;
+    outline: none;
+    color: #000;
+    color: rgb(0, 0, 0);
+    background: #f8f8f8f0;
+}
+
+@media (max-width: 850px) {
+    .container {
+        margin: 0 10%;
+        display: flex;
+    }
+    .personalinfo {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        margin: 1% 1%;
+        padding: 0%;
+        min-width: 320px;
+    }
+    img {
+        padding: 0%;
+        width: 150px;
+        height: 100px;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 320;
+    }
+    ul {
+        padding-left: 0.25em;
+    }
+}
