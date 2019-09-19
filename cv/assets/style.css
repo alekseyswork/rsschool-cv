@@ -1,0 +1,41 @@
+.container {
+    margin: 0, 0;
+    max-width: 1024px;
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(36, 39, 41);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.content{
+    display: clear;
+}
+.personalinfo{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000;
+}
+img{
+    padding: 0 5%;
+    width:300px;
+    height:200px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        margin: 0 10%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin: 0 0%;
+    }
+}
