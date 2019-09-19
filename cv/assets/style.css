@@ -19,11 +19,15 @@ body {
     display: clear;
 }
 
-.personalinfo, .blocks {
+.blocks {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     padding: 0.5em;
+}
+
+.personal_info {
+    justify-content: space-between;
 }
 
 .verticalline {
@@ -46,6 +50,10 @@ ul {
 }
 
 .personalinfo ul {
+    padding: 0;
+}
+
+.personalIngoList {
     padding: 0;
 }
 
@@ -86,7 +94,7 @@ input {
         margin: 0 10%;
         display: flex;
     }
-    .personalinfo {
+    .personal_info {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
