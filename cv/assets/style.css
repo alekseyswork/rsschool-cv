@@ -74,7 +74,9 @@ img {
 }
 
 label {
-    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+    width: 25%;
 }
 
 label:after {
@@ -82,6 +84,7 @@ label:after {
 }
 
 input {
+    width: 72%;
     border: 0;
     outline: none;
     color: #000;
